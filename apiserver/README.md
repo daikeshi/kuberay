@@ -59,7 +59,7 @@ DELETE {{baseUrl}}/apis/v1alpha1/compute_templates/?name=<compute_template_name>
 #### Create cluster
 
 ```
-POST {{baseUrl}}/apis/v1alpha1/clusters
+POST {{baseUrl}}/apis/v1alpha2/namespaces/<namespace>/clusters
 ```
 
 payload
@@ -95,7 +95,7 @@ payload
 #### List all clusters
 
 ```
-GET {{baseUrl}}/apis/v1alpha1/clusters
+GET {{baseUrl}}/apis/v1alpha2/namespaces/<namespace>/clusters
 ```
 
 ```
@@ -142,12 +142,12 @@ GET {{baseUrl}}/apis/v1alpha1/clusters
 #### Get cluster by name
 
 ```
-GET {{baseUrl}}/apis/v1alpha1/clusters/?name=<cluster_name>
+GET {{baseUrl}}/apis/v1alpha2/namespaces/<namespace>/clusters/<cluster_name>
 ```
 
 
 #### Delete cluster by name
 
 ```
-DELETE {{baseUrl}}/apis/v1alpha1/clusters/?name=<cluster_name>
+DELETE {{baseUrl}}/apis/v1alpha2/namespaces/<namespace>/clusters/<cluster_name>
 ```
